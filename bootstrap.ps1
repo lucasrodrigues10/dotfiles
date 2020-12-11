@@ -16,5 +16,6 @@ choco feature enable -n=allowGlobalConfirmation
 # #################
 . .\setup\generate_ssh_key.ps1
 . .\setup\nuget_sources_config.ps1
-
+. .\setup\capslock_to_esc.ps1
+. .\setup\uninstall_ms_clutter.ps1
 
