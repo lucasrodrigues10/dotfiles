@@ -1,0 +1,5 @@
+
+Import-Module Get-ChildItemColor
+Set-Alias l Get-ChildItemColor -Option AllScope
+Set-Alias ls Get-ChildItemColorFormatWide -Option AllScope
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
