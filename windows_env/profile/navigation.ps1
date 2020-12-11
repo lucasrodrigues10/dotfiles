@@ -1,5 +1,10 @@
 Import-Module Jump.Location
 
+Import-Module Get-ChildItemColor
+Set-Alias l Get-ChildItemColor -Option AllScope
+Set-Alias ls Get-ChildItemColorFormatWide -Option AllScope
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+
 function moveToParent() { Set-Location ..}
 function moveToGrandpa() { Set-Location ..\..}
 function moveToHome() { Set-Location ~ }

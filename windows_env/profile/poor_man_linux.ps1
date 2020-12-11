@@ -14,3 +14,7 @@ function wc {
     if ($m) { return Measure-Object -InputObject $txt -Character | Select-Object -ExpandProperty Characters }
     else { return Measure-Object -InputObject $txt -Word | Select-Object -ExpandProperty Words }
 }
+
+function unixtimestamp() {
+    [int][double]::parse((get-date -UFormat %s))
+}
