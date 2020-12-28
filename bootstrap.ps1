@@ -1,4 +1,7 @@
 
+Write-Host "Unblocking files"
+gci -Recurse . | Unblock-File
+
 # #################
 # Install tools
 # #################
