@@ -6,10 +6,16 @@
 
 ### Setup Windows env
 
+Install Boxstarter
+
+```powershell
+. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force
+```
+
 You can clone the repository wherever you want.
 
 ```powershell
-git clone git@github.com:rzuquim/dotfiles.git; cd dotfiles; ./bootstrap.ps1
+Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lucasrodrigues10/dotfiles/other-changes/bootstrap.ps1 -DisableReboots
 ```
 
 ### Setup Linux env

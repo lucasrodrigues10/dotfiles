@@ -1,6 +1,4 @@
-
-Write-Host "Unblocking files"
-gci -Recurse . | Unblock-File
+. .\windows_env\setup\initial_setup.ps1
 
 # #################
 # Install tools
