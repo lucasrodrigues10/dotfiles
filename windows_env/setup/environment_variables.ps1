@@ -1,5 +1,4 @@
-
-$defaultEnvUrl = "https://gist.githubusercontent.com/rzuquim/3ae05aba3d29572012d4f31f7293e716/raw/.env"
+$defaultEnvUrl = "https://gist.githubusercontent.com/lucasrodrigues10/7d41587f9824ed1b64f3be6e44dd9341/raw/6f85f1ac55317605708d5805cfdd33f3c9aeabb1/.raw"
 
 $envUrl = Read-Host -Prompt "Please enter the .env file URL (using default if none)"
 if (-not $envUrl) {
