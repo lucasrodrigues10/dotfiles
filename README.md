@@ -6,13 +6,19 @@
 
 ### Setup Windows env
 
-Install Boxstarter
+Install BoxStarter
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bootstrapper.ps1')); Get-Boxstarter -Force
 ```
 
-You can clone the repository wherever you want.
+Download [dotfiles repository](https://github.com/rzuquim/dotfiles) and unblock it
+
+```powershell
+gci -Recurse . | Unblock-File
+```
+
+Then run it
 
 ```powershell
 powershell -ep Unrestricted .\bootstrap.ps1 -Force
