@@ -9,13 +9,13 @@
 Install Boxstarter
 
 ```powershell
-. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://boxstarter.org/bootstrapper.ps1')); Get-Boxstarter -Force
 ```
 
 You can clone the repository wherever you want.
 
 ```powershell
-Install-BoxstarterPackage -PackageName https://raw.githubusercontent.com/lucasrodrigues10/dotfiles/other-changes/bootstrap.ps1 -DisableReboots
+powershell -ep Unrestricted .\bootstrap.ps1 -Force
 ```
 
 ### Setup Linux env

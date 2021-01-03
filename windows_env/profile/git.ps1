@@ -1,5 +1,5 @@
-Import-Module posh-git
-Import-Module oh-my-posh
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
 
 function on-gitlab($path = '/-/network/@branch') {
     $ssh = git config --get remote.origin.url

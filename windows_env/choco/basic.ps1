@@ -11,3 +11,5 @@ cinst ditto
 cinst everything
 cinst pritunl-client
 cinst openvpn # TODO: associate with inoa config vpn
+
+if (Test-PendingReboot) { Invoke-Reboot }

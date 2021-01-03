@@ -2,3 +2,4 @@
 # cinst authy-desktop
 # cinst discord
 # cinst mremoteng
+# cinst whatsapp

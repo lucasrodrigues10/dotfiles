@@ -1,5 +1,5 @@
 # communication / media
-cinst brave # googlechrome
+cinst googlechrome
 cinst telegram
 cinst vlc
 cinst ffmpeg

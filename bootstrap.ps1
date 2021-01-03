@@ -21,3 +21,5 @@ choco feature enable -n=allowGlobalConfirmation
 . .\windows_env\setup\capslock_to_esc.ps1
 . .\windows_env\setup\uninstall_ms_clutter.ps1
 
+# Final Restart
+if (Test-PendingReboot) { Invoke-Reboot }
